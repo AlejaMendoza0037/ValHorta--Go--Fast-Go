@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-color: #0a24b9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .screen {
+            background-color: #0a24b9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #login-screen {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        #logo {
+            max-width: 200px;
+            max-height: 200px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #fbc531;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            background-color: #dcdde1;
+            color: #333;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #fbc531;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-screen" class="screen">
+        <img id="logo" src="https://tse3.mm.bing.net/th?id=OIP.mu16IxdRM_sh5LHRzEz7aQAAAA&pid=Api&P=0&h=180" alt="Logo">
+        <h2 style="color: white;">Iniciar Sesión</h2>
+        <form action="/login" method="POST">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+</body>
+</html>
