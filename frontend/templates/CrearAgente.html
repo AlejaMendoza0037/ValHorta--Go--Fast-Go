@@ -54,48 +54,126 @@
             </div>
           </nav>
 
+
+
+
+
+          <h3>Crear Agente</h3>
+          <div  class="imagenMensajero">
+
+            <img src="mensajerodiascorte-min.png" class="imagenMensajero" alt="">
+
+          </div>
+
+          
+
+          
+
+
+          
+      
+
+      
+
+
+      <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Crear Nuevo</button>
+
+
+        <table id="crearEvento " class="table mt-2 table-bordered table-striped">
+          <thead>
+            <tr class="text-center">
+              <th>Cedula-ID</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Fecha de  Nacimiento</th>
+              <th>Telefono</th>
+              <th>Acciones </th>
+              
+            </tr>
+          </thead>
+
+
+
+          <tbody>
+            
+
+          </tbody>
+
+
+        </table>
+
+
+
+
+
+      </div>
          
+
+
+
+
+
+
+
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Medico</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+      
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="Cedula-ID" class="col-form-label">Cedula-ID</label>
+                  <input type="number" class="form-control" id="Cedula-ID">
+                </div>
+                <div class="mb-3">
+                  <label for="nombreAgente" class="col-form-label">Nombre Agente</label>
+                  <input type="text" class="form-control" id="nombreAgente">
+                </div>
+                <div class="mb-3">
+                  <label for="apellidoAgente" class="col-form-label">Apellido Agente</label>
+                  <input type="text" class="form-control" id="apellidoAgente">
+                </div>
+                <div class="mb-3">
+                  <label for="FechaNacimiento" class="col-form-label">Fecha de Nacimiento</label>
+                  <input type="date" class="form-control" id="FechaNacimiento">
+                </div>
+                <div class="mb-3">
+                  <label for="Telefono" class="col-form-label">Telefono</label>
+                  <input type="number" class="form-control" id="Telefono">
+                </div>
+                
+              
+           
+           
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      
 
 
                 
         
 
 
-            <main>
-                <section class="principal"><!--estan relacionados entre si-->        
-                    
-                    <div class="contenido-Principal">        
-                        
-                        <p id="mision">   Nuestra misión es:  "conectar personas y negocios mediante la 
-                            entrega rápida, segura y confiable de paquetes y documentos. Nos esforzamos por 
-                            ser el enlace perfecto entre nuestros clientes y sus destinatarios, proporcionando
-                             un servicio excepcional que supere sus expectativas en cada entrega.". </p>
-                
-                        
-                     </div>
-                </section> 
-            
-            </main>
 
 
 
 
-
-            <section class="principal">
-
-                <div id="login-screen" class="screen">
-                    <img id="logo" src="image.png" alt="Logo">
-                    <h2 >Iniciar Sesión</h2>
-                    <form action="/login" method="POST">
-                        <input type="text" id="username" name="username" placeholder="Nombre de usuario">
-                        <input type="password" id="password" name="password" placeholder="Contraseña">
-                        <input type="button" id="btnIniciarSesion" value="iniciar sesion ">
-                    </form>
-                </div>
-            
-
-
-            </section>      
+                 
             
             
 

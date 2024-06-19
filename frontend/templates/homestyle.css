@@ -1,0 +1,43 @@
+
+
+
+
+.principal{
+    background: #e3e0ec;
+    padding: 20px;/*espaciamiento interno*/
+
+}
+
+
+
+p{
+    text-align: center;    
+}
+ 
+
+#mision{
+    font-size: 20px; 
+}
+
+
+@media screen and (max-width:480px){
+   
+    nav{
+        position: static;
+    }
+
+
+    .screen, .contenido-Principal, .principal,  .screen, .principal {
+        width: auto;
+
+    }
+    #mision, #login-screen{
+        width: auto;
+    }
+    
+
+}
+
+
+ 
+ 
